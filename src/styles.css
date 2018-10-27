@@ -1,50 +1,57 @@
 .App {
-  font-family: sans-serif;
-  text-align: center;
+    font-family: sans-serif;
+    text-align: center;
 }
 
 body {
-  width: 100%;
-  max-width: 380px;
-  margin: 0 auto;
+    width: 100%;
+    max-width: 380px;
+    margin: 0 auto;
 }
 
 h1 {
-  border-left: 5px solid #e1e1e1;
-  padding-left: 5px;
+    border-left: 5px solid #e1e1e1;
+    padding-left: 5px;
 }
 
 ul {
-  list-style: none;
-  margin: 0;
+    list-style: none;
+    margin: 0;
 }
 
 li {
-  position: relative;
-  margin: 10px;
-  border: 1px solid #ccc;
-  padding: 4px;
-  border-radius: 4px;
-  color: #666;
-  cursor: move;
+    position: relative;
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 4px;
+    border-radius: 4px;
+    color: #666;
+}
+
+button {
+    cursor: grab;
+}
+
+button:active {
+    cursor: grabbing;
 }
 
 li:hover {
-  background-color: #eee;
+    background-color: #eee;
 }
 
 .placeholder {
-  opacity: 0.2;
+    opacity: 0.2;
 }
 
 .icon {
-  position: absolute;
-  right: 15px;
-  cursor: move;
-  /* background-image: url("https://uploads.codesandbox.io/uploads/user/27c1b23f-13f0-447f-800b-effa2f8058c8/PevH-if_Menu_2190974%20(1).png"); */
-  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAU0lEQVQ4T2NkoBAwUqifgWoGnGRgYDAj0TUgPRYwFxwHcUg04BgDA4M11bxAouUI5TAXUBwGJxgYGMxJdMYgC4MzDAwMxiR6ASUdDIMwINH7COUAalAMEcvSqK4AAAAASUVORK5CYII=");
-  border: none;
-  height: 16px;
-  width: 16px;
-  transition: all 500ms;
+    position: absolute;
+    right: 15px;
+    top: calc(50% - 10px);
+    cursor: move;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAU0lEQVQ4T2NkoBAwUqifgWoGnGRgYDAj0TUgPRYwFxwHcUg04BgDA4M11bxAouUI5TAXUBwGJxgYGMxJdMYgC4MzDAwMxiR6ASUdDIMwINH7COUAalAMEcvSqK4AAAAASUVORK5CYII=");
+    border: none;
+    height: 16px;
+    width: 16px;
+    transition: all 500ms;
 }

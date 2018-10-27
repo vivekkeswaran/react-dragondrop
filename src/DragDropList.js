@@ -21,7 +21,7 @@ class DragDropList extends React.Component {
   };
 
     updateState = () => {
-        let data = this.state.items,
+        let data = this.state.content,
             from = Number(this.dragged.dataset.id),
             to = Number(this.over.dataset.id);
         if (from < to) to--;
@@ -74,7 +74,7 @@ class DragDropList extends React.Component {
     };
 
     render() {
-        const listItems = this.state.items.map((item, i) => {
+        const listItems = this.state.content.map((item, i) => {
             return (
                 <li className="row" data-id={i} key={i} onDragEnd={this.dragEnd} onDragStart={this.dragStart}>
                     {item}
